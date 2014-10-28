@@ -1,4 +1,4 @@
 AWDemo
 ======
 
-Alliance Worknet Demo
+AW Demo Site
