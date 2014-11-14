@@ -8,7 +8,7 @@
                 state: "main",
                 config: {
                     url: "/",
-                    templateUrl: 'AWDemo/App/home/home.tpl.html'
+                    templateUrl: 'app/home/home.tpl.html'
                 },
                 nav: {
                     title: "Home",
@@ -31,21 +31,21 @@
                 state: "jobs.current",
                 config: {
                     url: "",
-                    templateUrl: 'AWDemo/App/jobs/list.tpl.html'
+                    templateUrl: 'app/jobs/list.tpl.html'
                 }
             },
             {
                 state: "jobs.details",
                 config: {
                     url: "/{orderNumber}",
-                    templateUrl: 'AWDemo/App/jobs/details.tpl.html'
+                    templateUrl: 'app/jobs/details.tpl.html'
                 }
             },
             {
                 state: "partners",
                 config: {
                     url: "/partners",
-                    templateUrl: 'AWDemo/App/partners/partners.tpl.html'
+                    templateUrl: 'app/partners/partners.tpl.html'
                 },
                 nav: {
                     title: "Partners",
@@ -56,7 +56,7 @@
                 state: "aboutUs",
                 config: {
                     url: "/aboutUs",
-                    templateUrl: 'AWDemo/App/aboutUs/aboutUs.tpl.html'
+                    templateUrl: 'app/aboutUs/aboutUs.tpl.html'
                 },
                 nav: {
                     title: "About Us",
@@ -67,7 +67,7 @@
                 state: "faq",
                 config: {
                     url: "/faq",
-                    templateUrl: 'AWDemo/App/faq/faqList.tpl.html'
+                    templateUrl: 'app/faq/faqList.tpl.html'
                 },
                 nav: {
                     title: "FAQ",
