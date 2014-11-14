@@ -8,7 +8,7 @@
                 state: "main",
                 config: {
                     url: "/",
-                    templateUrl: 'app/home/home.tpl.html'
+                    templateUrl: 'App/home/home.tpl.html'
                 },
                 nav: {
                     title: "Home",
@@ -31,21 +31,21 @@
                 state: "jobs.current",
                 config: {
                     url: "",
-                    templateUrl: 'app/jobs/list.tpl.html'
+                    templateUrl: 'App/jobs/list.tpl.html'
                 }
             },
             {
                 state: "jobs.details",
                 config: {
                     url: "/{orderNumber}",
-                    templateUrl: 'app/jobs/details.tpl.html'
+                    templateUrl: 'App/jobs/details.tpl.html'
                 }
             },
             {
                 state: "partners",
                 config: {
                     url: "/partners",
-                    templateUrl: 'app/partners/partners.tpl.html'
+                    templateUrl: 'App/partners/partners.tpl.html'
                 },
                 nav: {
                     title: "Partners",
@@ -56,7 +56,7 @@
                 state: "aboutUs",
                 config: {
                     url: "/aboutUs",
-                    templateUrl: 'app/aboutUs/aboutUs.tpl.html'
+                    templateUrl: 'App/aboutUs/aboutUs.tpl.html'
                 },
                 nav: {
                     title: "About Us",
@@ -67,7 +67,7 @@
                 state: "faq",
                 config: {
                     url: "/faq",
-                    templateUrl: 'app/faq/faqList.tpl.html'
+                    templateUrl: 'App/faq/faqList.tpl.html'
                 },
                 nav: {
                     title: "FAQ",
