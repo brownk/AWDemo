@@ -1,0 +1,41 @@
+﻿<div data-ng-controller="faqCtrl as vm">
+	<div class="page-head">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<h2>Frequently Asked Questions</h2>
+					<h4>Get the answers to your questions! 558-WORK (9675)</h4>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="content faq">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12">
+					<div class="page-header">
+						<h4>Job Prep Workshow</h4>
+					</div>
+					<div class="panel-group" id="accordion">
+						<aw-faq data-ng-repeat="faq in vm.faqsJobPrep" faq="faq"></aw-faq>
+					</div>
+				</div>
+			</div>
+			<hr />
+			<div class="row">
+				<div class="col-xs-12">
+					<div class="page-header">
+						<h4>Career Quest</h4>
+					</div>
+					<div class="panel-group" id="accordion">
+						<aw-faq data-ng-repeat="faq in vm.faqsCareerQuest" faq="faq"></aw-faq>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+</div>
+
+
+

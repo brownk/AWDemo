@@ -1,0 +1,127 @@
+﻿<div class="content resume" data-ng-controller="jobDetailsCtrl as vm">
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12">
+				<h2>
+					<span class="small">
+						Order #:&nbsp;{{vm.job.orderNumber}}
+					</span>
+					&nbsp;{{vm.job.title}}
+					<span class="rsmall pull-right">
+						{{vm.job.date | date: "MM/dd/yyyy"}}
+					</span>
+				</h2>
+				<div class="bor"></div>
+				<div class="clearfix"></div>
+				<div class="rblock">
+					<div class="row">
+						<div class="col-md-3">
+							<h4>Basic Info</h4>
+						</div>
+						<div class="col-md-9">
+							<div class="rinfo">
+								<div class="row">
+									<div class="col-sm-4">
+										<h5>City</h5>
+									</div>
+									<div class="col-sm-2">
+										<p>{{vm.job.city}}</p>
+									</div>
+									<div class="col-sm-4">
+										<h5>Hours per week</h5>
+									</div>
+									<div class="col-sm-2">
+										<p>{{vm.job.hoursPerWeek}}</p>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-sm-4">
+										<h5>Salary/Wage</h5>
+									</div>
+									<div class="col-sm-2">
+										<p>{{vm.job.salary}}</p>
+									</div>
+									<div class="col-sm-4">
+										<h5>Working Days</h5>
+									</div>
+									<div class="col-sm-2">
+										<p>{{vm.job.workingDays}}</p>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-sm-4">
+										<h5>Working Hours</h5>
+									</div>
+									<div class="col-sm-2">
+										<p>{{vm.job.workingHours}}</p>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-xs-12">
+										<h5>Additional Wage and Scheduling Info:</h5>
+										<p>{{vm.job.additionalWageInfo}}</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="rblock">
+					<div class="row">
+						<div class="col-md-3">
+							<h4>Job Description</h4>
+						</div>
+						<div class="col-md-9">
+							<div class="rinfo">
+								<p>{{vm.job.description}}</p>
+								<br />
+								<h5>Core Job Duties:</h5>
+								<p>
+									<ul>
+										<li data-ng-repeat="coreDuties in vm.job.descriptionList">{{coreDuties}}</li>
+									</ul>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="rblock">
+					<div class="row">
+						<div class="col-md-3">
+							<h4>Minimum Job Requirements</h4>
+						</div>
+						<div class="col-md-9">
+							<div class="rinfo">
+								<p>
+									<ul>
+										<li data-ng-repeat="requirement in vm.job.requirements">{{requirement}}</li>
+									</ul>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row hidden-print">
+			<div class="col-xs-12">
+				<span class="pull-right small">*You can print this job opening by going to File <i class="fa fa-arrow-right"></i> Print or Ctrl + P</span>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<div class="cta">
+			<div class="row">
+				<div class="col-xs-12">
+					<div class="ctas">
+						<p>
+							How to Apply for Job Order #{{vm.job.orderNumber}}:<br/>
+							Please email resume to: {{vm.job.emailContact}} and include Marketer Position in the subject heading of your email.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</div>
