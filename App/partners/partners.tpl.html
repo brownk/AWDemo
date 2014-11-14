@@ -1,0 +1,64 @@
+﻿<div data-ng-controller="partnersCtrl as vm" class="service-two">
+	<div class="container">
+		<div class="cta">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="ctas">
+						<h3>Education and Community Partners</h3>
+						<p>The following agencies partner with the Alliance Worknet to provide many different services to residents of Stanislaus County</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<hr />
+		<div class="row">
+			<div class="col-md-12">
+				<h4 class="title">One Stop Partners</h4>
+			</div>
+			<div class="col-md-3 col-sm-3" data-ng-repeat="partner in vm.oneStopPartners">
+				<img class="img-responsive" ng-src="{{partner.image}}" alt="{{partner.alt}}" style="height: 50px;" />
+				<h5>
+					<a data-ng-href="{{partner.url}}">{{partner.name}}</a>
+				</h5>
+				<p>
+					{{partner.address}}<br />
+					{{partner.city + "," + partner.state +" "+ partner.zip}}<br />
+					{{partner.phone}}
+				</p>
+			</div>
+		</div>
+		<hr />
+		<div class="row">
+			<div class="col-md-12">
+				<h4 class="title">Educational Partners</h4>
+			</div>
+			<div class="col-md-3 col-sm-3" data-ng-repeat="partner in vm.educationPartners">
+				<h5>
+					<a data-ng-href="{{partner.url}}">{{partner.name}}</a>
+				</h5>
+				<p>
+					{{partner.address}}<br />
+					{{partner.city + "," + partner.state +" "+ partner.zip}}<br />
+					{{partner.phone}}
+				</p>
+			</div>
+		</div>
+
+		<hr />
+		<div class="row">
+			<div class="col-md-12">
+				<h4 class="title">Organizational Partners</h4>
+			</div>
+			<div class="col-md-3 col-sm-3" data-ng-repeat="partner in vm.organizationalPartners">
+				<h5>
+					<a data-ng-href="{{partner.url}}">{{partner.name}}</a>
+				</h5>
+				<p>
+					{{partner.address}}<br />
+					{{partner.city + ", " + partner.state +" "+ partner.zip}}<br />
+					{{partner.phone}}
+				</p>
+			</div>
+		</div>
+	</div>
+</div>

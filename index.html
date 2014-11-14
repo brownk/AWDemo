@@ -1,31 +1,166 @@
 ﻿<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html xmlns="http://www.w3.org/1999/xhtml" data-ng-app="app" class="">
 <head>
-	<link href="Content/bootstrap.min.css" rel="stylesheet" />
-	
-    <title></title>
-</head>
-<body>
-	This will be the Site!
+	<base href="/">
+	<!--VENDOR CSS-->
+	<!--THEME CSS-->
+	<link href="Content/css/bootstrap.min.css" rel="stylesheet" />
+	<link href="Content/css/blue.css" rel="stylesheet" />
+	<link href="Content/css/brown.css" rel="stylesheet" />
+	<link href="Content/css/flexslider.css" rel="stylesheet" />
+	<link href="Content/css/font-awesome.min.css" rel="stylesheet" />
+	<link href="Content/css/green.css" rel="stylesheet" />
+	<link href="Content/css/orange.css" rel="stylesheet" />
+	<link href="Content/css/owl.carousel.css" rel="stylesheet" />
+	<link href="Content/css/prettyPhoto.css" rel="stylesheet" />
+	<link href="Content/css/red.css" rel="stylesheet" />
+	<link href="Content/css/settings.css" rel="stylesheet" />
+	<link href="Content/css/slider.css" rel="stylesheet" />
+	<link href="Content/css/style.css" rel="stylesheet" />
+	<link href="Content/css/yellow.css" rel="stylesheet" />
 
+	<title class="hidden-print">AWDemo Site</title>
+</head>
+<body data-ng-cloak>
+	<header class="hidden-print">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-3">
+					<div class="logo">
+						<a data-ui-sref="home">
+							<img class="img-responsive" src="assets/logo-alliance-worknet-copper-modified.gif" alt="Alliance Worknet" style="max-height: 100px; margin-left: auto; margin-right: auto;" />
+						</a>
+						<p class="meta">
+						</p>
+					</div>
+				</div>
+				<div class="col-sm-9">
+					<div class="navbar bs-docs-nav" role="banner">
+						<div class="navbar-header">
+							<button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+								<span class="sr-only">Toggle navigation</span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+						</div>
+						<nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation" data-ng-controller="navbar as vm">
+							<ul class="nav navbar-nav navbar-right">
+								<li data-ng-repeat="state in vm.stateRoutes">
+									<a data-ng-href="#{{state.config.url}}">{{state.nav.title}}</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<div class="sep hidden-print"></div>
+	<div class="background hidden-print">
+		<img src="assets/banner.jpg" alt="Modesto" style="max-width: 100%" />
+	</div>
+	<div class="sep hidden-print"></div>
+	<!--CONTENT-->
+
+	<div data-ui-view></div>
+
+	<!--PARTNERS-->
+	<div class="container hidden-print">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="clients">
+					<img class="img-responsive" src="assets/logo-sbdc-top.jpg" alt="SBDC" />
+					<img class="img-responsive" src="assets/logo-alliance-top.jpg" alt="Stan Alliance" />
+					<img class="img-responsive" src="assets/logo-heading_edd.gif" alt="EDD" />
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer class="hidden-print">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4">
+					<div class="widget">
+						<h5>Contact Us</h5>
+						<hr />
+						<strong>Alliance Worknet</strong>
+						<hr />
+						251 E. Hackett Roads<br />
+						P.O. Box 3389<br />
+						Modesto, California 95353-3389<br />
+						<hr />
+						Telephone: 209.558–2100<br />
+						Fax: 209.558–2164
+						<hr />
+						<a href="https://www.facebook.com/AllianceWorknet">Like us on Facebook!&nbsp;&nbsp;<i class="fa fa-facebook facebook"></i></a>
+					</div>
+				</div>
+				<div class="col-md-4"></div>
+				<div class="col-md-4"></div>
+
+			</div>
+			<div class="row">
+				<div class="col-xs-12">
+					<p class="copy">
+						©Copyright 2003 | 2014 Stanislaus Alliance Worknet | All Rights Reserved Worldwide. <br />
+						Last Updated - Nov. 3 2014
+					</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<span class="totop" style="display: block;">
+		<a href="#">
+			<i class="fa fa-chevron-up"></i>
+		</a>
+	</span>
+
+	<!--THEME SCRIPTS-->
+	<script src="Content/js/jquery.js"></script>
+	<script src="Content/js/bootstrap.min.js"></script>
+	<script src="Content/js/filter.js"></script>
+	<script src="Content/js/html5shiv.js"></script>
+	<script src="Content/js/jquery.cslider.js"></script>
+	<script src="Content/js/jquery.flexslider-min.js"></script>
+	<script src="Content/js/jquery.isotope.js"></script>
+	<script src="Content/js/jquery.prettyPhoto.js"></script>
+	<script src="Content/js/jquery.themepunch.plugins.min.js"></script>
+	<script src="Content/js/jquery.themepunch.revolution.min.js"></script>
+	<script src="Content/js/modernizr.custom.28468.js"></script>
+	<script src="Content/js/owl.carousel.min.js"></script>
+	<script src="Content/js/respond.min.js"></script>
+	<script src="Content/js/custom.js"></script>
 
 	<!--VENDOR SCRIPTS-->
-	<script src="scripts/jquery-1.9.0.min.js"></script>
+	<script src="scripts/angular.js"></script>
 	<script src="scripts/bootstrap.min.js"></script>
-	<script src="scripts/angular.min.js"></script>
+	<script src="scripts/bootstrap-datetimepicker.min.js"></script>
 	<script src="scripts/angular-ui-router.min.js"></script>
 	<script src="scripts/angular-sanitize.min.js"></script>
 	<script src="scripts/angular-resource.min.js"></script>
+	<script src="scripts/linq.min.js"></script>
 	<script src="scripts/angular-animate.min.js"></script>
-	
+
 	<!--APP SCRIPTS-->
-	
+	<script src="App/app.js"></script>
+	<script src="App/config/states.config.js"></script>
+
 	<!--APP CONTROLLERS-->
-	
+	<script src="App/nav/nav.ctrl.js"></script>
+	<script src="App/partners/partners.ctrl.js"></script>
+	<script src="App/jobs/currentJobs.ctrl.js"></script>
+	<script src="App/jobs/jobDetails.ctrl.js"></script>
+	<script src="App/news/news.ctrl.js"></script>
+	<script src="App/faq/faq.ctrl.js"></script>
 	<!--APP SERVICES-->
-	
+	<script src="App/services/partners.srvc.js"></script>
+	<script src="App/services/currentJobs.srvc.js"></script>
+	<script src="App/services/news.srvc.js"></script>
+	<script src="App/services/helpfulLinks.srvc.js"></script>
+	<script src="App/services/faq.srvc.js"></script>
 	<!--APP DIRECTIVES-->
-	
+	<script src="App/directives/faq.dir.js"></script>
 	<!--APP FACTORIES-->
 </body>
 </html>
